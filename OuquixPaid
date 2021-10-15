@@ -1,0 +1,445 @@
+---- Made by Bling#3497
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Topbar = Instance.new("Frame")
+local Ouquix = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local Box = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Esp = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Tp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Triggerbot = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local OuquixHomepage = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Antilock = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ActivateSilentaim = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local SilentaimFOV = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Aimlocktitle = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.Position = UDim2.new(0.072133638, 0, 0.240490794, 0)
+Main.Size = UDim2.new(0, 693, 0, 442)
+
+Topbar.Name = "Topbar"
+Topbar.Parent = Main
+Topbar.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Topbar.BorderSizePixel = 0
+Topbar.Position = UDim2.new(0, 0, -0.112781957, 0)
+Topbar.Size = UDim2.new(1, 0, 0.125313282, 0)
+
+Ouquix.Name = "Ouquix"
+Ouquix.Parent = Main
+Ouquix.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Ouquix.BackgroundTransparency = 1.000
+Ouquix.BorderSizePixel = 0
+Ouquix.Position = UDim2.new(0, 0, -0.102756895, 0)
+Ouquix.Size = UDim2.new(0, 214, 0, 50)
+Ouquix.Font = Enum.Font.SourceSansItalic
+Ouquix.Text = "Ouquix"
+Ouquix.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ouquix.TextSize = 45.000
+Ouquix.TextWrapped = true
+Ouquix.TextXAlignment = Enum.TextXAlignment.Left
+
+X.Name = "X"
+X.Parent = Main
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.888888896, 0, -0.114001065, 0)
+X.Size = UDim2.new(0, 77, 0, 55)
+X.Font = Enum.Font.SourceSansLight
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+Box.Name = "Box"
+Box.Parent = Main
+Box.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Box.BorderSizePixel = 0
+Box.Position = UDim2.new(0.349206358, 0, 0.201652288, 0)
+Box.Size = UDim2.new(0, 427, 0, 322)
+
+UICorner.Parent = Box
+
+UICorner_2.Parent = Main
+
+Esp.Name = "Esp"
+Esp.Parent = Main
+Esp.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Esp.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Esp.Position = UDim2.new(0.00288600288, 0, 0.0652309507, 0)
+Esp.Size = UDim2.new(0, 209, 0, 50)
+Esp.Font = Enum.Font.SourceSansLight
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 24.000
+Esp.MouseButton1Down:connect(function()
+	local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+	ESP:Toggle(true)
+end)
+
+UICorner_3.Parent = Esp
+
+Tp.Name = "Tp"
+Tp.Parent = Main
+Tp.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Tp.Position = UDim2.new(0.00721500721, 0, 0.381179184, 0)
+Tp.Size = UDim2.new(0, 209, 0, 50)
+Tp.Font = Enum.Font.SourceSansLight
+Tp.Text = "Tp"
+Tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tp.TextSize = 24.000
+Tp.MouseButton1Down:connect(function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Blings TP"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+
+UICorner_4.Parent = Tp
+
+Triggerbot.Name = "Triggerbot"
+Triggerbot.Parent = Main
+Triggerbot.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Triggerbot.Position = UDim2.new(0, 0, 0.221158117, 0)
+Triggerbot.Size = UDim2.new(0, 209, 0, 50)
+Triggerbot.Font = Enum.Font.SourceSansLight
+Triggerbot.Text = "Triggerbot"
+Triggerbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Triggerbot.TextSize = 24.000
+Triggerbot.MouseButton1Down:connect(function()
+	
+	local HoldClick = false
+	local Hotkey = 'P'
+	local HotkeyToggle = true
+
+	local Players = game:GetService('Players')
+	local RunService = game:GetService('RunService')
+
+	local LocalPlayer = Players.LocalPlayer
+	local Mouse = LocalPlayer:GetMouse()
+
+	local Toggle = (Hotkey ~= '')
+	local CurrentlyPressed = false
+
+	Mouse.KeyDown:Connect(function(key)
+		if HotkeyToggle == true and key == Hotkey then
+			Toggle = not Toggle
+		elseif 
+			key == Hotkey then
+			Toggle = true
+		end
+	end)
+
+	Mouse.KeyUp:Connect(function(key)
+		if HotkeyToggle ~= true and key == Hotkey then
+			Toggle = false
+		end
+	end)
+
+	RunService.RenderStepped:Connect(function()
+		if Toggle then
+			if Mouse.Target then
+				if Mouse.Target.Parent:FindFirstChild('Humanoid') then
+					if HoldClick then
+						if not CurrentlyPressed then
+							CurrentlyPressed = true
+							mouse1press()
+						end
+					else
+						mouse1click()
+					end
+				else
+					if HoldClick then
+						CurrentlyPressed = false
+						mouse1release()
+					end
+				end
+			end
+		end
+	end)
+end)
+
+UICorner_5.Parent = Triggerbot
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Main
+Noclip.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Noclip.Position = UDim2.new(0.00288600288, 0, 0.53545624, 0)
+Noclip.Size = UDim2.new(0, 209, 0, 50)
+Noclip.Font = Enum.Font.SourceSansLight
+Noclip.Text = "Noclip (e)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 24.000
+Noclip.MouseButton1Down:connect(function()
+	noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+
+if key == "e" then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+print('Loaded')
+print('Press "E" to noclip')
+
+end)
+
+UICorner_6.Parent = Noclip
+
+OuquixHomepage.Name = "Ouquix Homepage"
+OuquixHomepage.Parent = Main
+OuquixHomepage.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+OuquixHomepage.BorderSizePixel = 0
+OuquixHomepage.Position = UDim2.new(0.360750377, 0, 0.0666938871, 0)
+OuquixHomepage.Size = UDim2.new(0, 419, 0, 50)
+OuquixHomepage.Font = Enum.Font.SourceSans
+OuquixHomepage.Text = "Ouquix Home page"
+OuquixHomepage.TextColor3 = Color3.fromRGB(255, 255, 255)
+OuquixHomepage.TextSize = 28.000
+
+UICorner_7.Parent = OuquixHomepage
+
+Antilock.Name = "Antilock"
+Antilock.Parent = Main
+Antilock.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Antilock.Position = UDim2.new(0.00721500721, 0, 0.693827271, 0)
+Antilock.Size = UDim2.new(0, 209, 0, 50)
+Antilock.Font = Enum.Font.SourceSansLight
+Antilock.Text = "Antilock (maybe works idk yet)"
+Antilock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Antilock.TextScaled = true
+Antilock.TextSize = 1.000
+Antilock.TextWrapped = true
+
+
+UICorner_8.Parent = Antilock
+
+ActivateSilentaim.Name = "Activate Silentaim"
+ActivateSilentaim.Parent = Main
+ActivateSilentaim.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ActivateSilentaim.Position = UDim2.new(0.392496377, 0, 0.375565618, 0)
+ActivateSilentaim.Size = UDim2.new(0, 214, 0, 50)
+ActivateSilentaim.Font = Enum.Font.SourceSansLight
+ActivateSilentaim.Text = "Activate Silentaim -"
+ActivateSilentaim.TextColor3 = Color3.fromRGB(255, 255, 255)
+ActivateSilentaim.TextScaled = true
+ActivateSilentaim.TextSize = 14.000
+ActivateSilentaim.TextWrapped = true
+ActivateSilentaim.MouseButton1Down:connect(function()
+	local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+	local window = lib:Window('Ouquix Silent aim')
+
+	window:Toggle('Silentaim toggle', function(enabled)
+		print("Silent aim")
+	end)
+
+	window:Slider('Size', {
+		max = 16.70,
+		def = 1.11
+	}, function(value)
+		print("bling pro")
+	end)
+end)
+
+UICorner_9.Parent = ActivateSilentaim
+
+SilentaimFOV.Name = "SilentaimFOV"
+SilentaimFOV.Parent = Main
+SilentaimFOV.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SilentaimFOV.Position = UDim2.new(0.00721500721, 0, 0.845411003, 0)
+SilentaimFOV.Size = UDim2.new(0, 209, 0, 50)
+SilentaimFOV.Font = Enum.Font.SourceSansLight
+SilentaimFOV.Text = "Silentaim (FOV)"
+SilentaimFOV.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentaimFOV.TextSize = 34.000
+SilentaimFOV.TextWrapped = true
+SilentaimFOV.MouseButton1Down:connect(function()
+	local dwCamera = workspace.CurrentCamera
+	local dwRunService = game:GetService("RunService")
+	local dwUIS = game:GetService("UserInputService")
+	local dwEntities = game:GetService("Players")
+	local dwLocalPlayer = dwEntities.LocalPlayer
+	local dwMouse = dwLocalPlayer:GetMouse()
+
+	local settings = {
+		Aimbot = true,
+		Aiming = false,
+		Aimbot_AimPart = "Head",
+		Aimbot_TeamCheck = true,
+		Aimbot_Draw_FOV = true,
+		Aimbot_FOV_Radius = 200,
+		Aimbot_FOV_Color = Color3.fromRGB(170,0,255)
+	}
+
+	local fovcircle = Drawing.new("Circle")
+	fovcircle.Visible = settings.Aimbot_Draw_FOV
+	fovcircle.Radius = settings.Aimbot_FOV_Radius
+	fovcircle.Color = settings.Aimbot_FOV_Color
+	fovcircle.Thickness = 1
+	fovcircle.Filled = false
+	fovcircle.Transparency = 1
+
+	fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+
+	dwUIS.InputBegan:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton2 then
+			settings.Aiming = true
+		end
+	end)
+
+	dwUIS.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton2 then
+			settings.Aiming = false
+		end
+	end)
+
+	dwRunService.RenderStepped:Connect(function()
+
+		local dist = math.huge
+		local closest_char = nil
+
+		if settings.Aiming then
+
+			for i,v in next, dwEntities:GetChildren() do 
+
+				if v ~= dwLocalPlayer and
+					v.Character and
+					v.Character:FindFirstChild("HumanoidRootPart") and
+					v.Character:FindFirstChild("Humanoid") and
+					v.Character:FindFirstChild("Humanoid").Health > 0 then
+
+					if settings.Aimbot_TeamCheck == true and
+						v.Team ~= dwLocalPlayer.Team or
+						settings.Aimbot_TeamCheck == false then
+
+						local char = v.Character
+						local char_part_pos, is_onscreen = dwCamera:WorldToViewportPoint(char[settings.Aimbot_AimPart].Position)
+
+						if is_onscreen then
+
+							local mag = (Vector2.new(dwMouse.X, dwMouse.Y) - Vector2.new(char_part_pos.X, char_part_pos.Y)).Magnitude
+
+							if mag < dist and mag < settings.Aimbot_FOV_Radius then
+
+								dist = mag
+								closest_char = char
+
+							end
+						end
+					end
+				end
+			end
+
+			if closest_char ~= nil and
+				closest_char:FindFirstChild("HumanoidRootPart") and
+				closest_char:FindFirstChild("Humanoid") and
+				closest_char:FindFirstChild("Humanoid").Health > 0 then
+
+				dwCamera.CFrame = CFrame.new(dwCamera.CFrame.Position, closest_char[settings.Aimbot_AimPart].Position)
+			end
+		end
+	end)
+end)
+
+UICorner_10.Parent = SilentaimFOV
+
+Aimlocktitle.Name = "Aimlock title"
+Aimlocktitle.Parent = ScreenGui
+Aimlocktitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Aimlocktitle.Position = UDim2.new(0.269552022, 0, 0.360736191, 0)
+Aimlocktitle.Size = UDim2.new(0, 387, 0, 50)
+Aimlocktitle.Font = Enum.Font.SourceSansItalic
+Aimlocktitle.Text = "Silentaim"
+Aimlocktitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlocktitle.TextSize = 34.000
+
+UICorner_11.Parent = Aimlocktitle
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.252847373, 0, 0.616775036, 0)
+TextLabel.Size = UDim2.new(0, 427, 0, 105)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "V TO CLOSE AND OPEN UI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+
+
+local function GBMYCAN_fake_script() 
+	local script = Instance.new('LocalScript', Main)
+
+	player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(key)
+		if key == "v" and script.Parent.Visible == false then
+			script.Parent.Visible = true
+		else
+			if key == "v" and script.Parent.Visible == true then
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(GBMYCAN_fake_script)()
+local function SGMYWXK_fake_script() 
+	local script = Instance.new('LocalScript', Main)
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Ouquix Paid script";
+		Text = "Thank you for buying Ouquix.";
+		Duration = "6";
+	})
+	
+	
+	
+end
+coroutine.wrap(SGMYWXK_fake_script)()
+
+if game.Players.LocalPlayer.UserId == userid then
+	print("Access Enabled")
+else
+	game.Players.LocalPlayer:Kick("Imagine not being whitelisted LOLLLLLLL (https://discord.gg/9jJxekKpsg to buy!)")
+	print("Denied")
+end
